@@ -7,7 +7,7 @@ version : '0.1.0',
 
 libgbinder_radio_dep = dependency(
   'libgbinder-radio',
-  version: '>= 1.4.6',
+  version: '>= 1.5.0',
   required: true,
 )
 
