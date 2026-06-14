@@ -11,9 +11,19 @@ libgbinder_radio_dep = dependency(
   required: true,
 )
 
+libgbinder_dep = dependency(
+  'libgbinder',
+  required: true,
+)
+
+glib_dep = dependency(
+  'glib-2.0',
+  required: true,
+)
+
 executable(
   'swimtool',
   'src/main.c',
-  dependencies: [libgbinder_radio_dep],
+  dependencies: [libgbinder_radio_dep, libgbinder_dep, glib_dep],
   install: true,
 )

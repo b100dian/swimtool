@@ -8,7 +8,10 @@ Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  meson
 BuildRequires:  ninja
 BuildRequires:  pkgconfig(libgbinder-radio) >= 1.4.6
+BuildRequires:  pkgconfig(libgbinder)
+BuildRequires:  pkgconfig(glib-2.0)
 Requires:       libgbinder-radio >= 1.4.6
+Requires:       libgbinder
 
 %description
 Sim Wake Information Monitor utility.
