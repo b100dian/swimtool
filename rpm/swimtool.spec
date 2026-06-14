@@ -7,9 +7,10 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  ninja
-BuildRequires:  pkgconfig(libgbinder-radio) >= 1.5.0
-BuildRequires:  pkgconfig(libgbinder)
-BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires: pkgconfig(libgbinder-radio)
+BuildRequires: pkgconfig(libgbinder)
+BuildRequires: pkgconfig(glib-2.0)
+BuildRequires: pkgconfig(libglibutil)
 Requires:       libgbinder-radio >= 1.5.0
 Requires:       libgbinder
 

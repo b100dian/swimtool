@@ -1,8 +1,8 @@
 project(
   'swimtool',
-  'c',
+  'cpp',
 version : '0.1.0',
-  default_options : ['warning_level=2', 'c_std=c17']
+  default_options : ['warning_level=2', 'cpp_std=c++17']
 )
 
 libgbinder_radio_dep = dependency(
@@ -21,9 +21,15 @@ glib_dep = dependency(
   required: true,
 )
 
+libglibutil_dep = dependency(
+  'libglibutil',
+  required: true,
+)
+
 executable(
   'swimtool',
-  'src/main.c',
-  dependencies: [libgbinder_radio_dep, libgbinder_dep, glib_dep],
+  'src/main.cpp',
+  include_directories: include_directories('include'),
+  dependencies: [libgbinder_radio_dep, libgbinder_dep, glib_dep, libglibutil_dep],
   install: true,
 )
