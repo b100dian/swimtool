@@ -1,4 +1,4 @@
-# Sim Wake Information Monitor
+# Sim Wakeup Interface Manager
 
 Detecting if sims are enabled and if any is an eSIM by connecting to IRadioConfig 1.2
 
