@@ -18,4 +18,11 @@ slot2_eid=<redacted>
 slot2_iccid=<redacted>
 ```
 
-meaningi: that eid presence is an eSim.
+meaning: that eid presence is an eSim.
+
+### systemd service
+
+The package installs one `systemd` service:
+
+- `swimtool-disable-slot2.service`
+  - Creates `/run/disable-slot2` when `slot2_enabled=true`, `slot2_eid` is non-empty, and `slot2_iccid` is empty (so, 2nd slot is eSIM, but without a profile)

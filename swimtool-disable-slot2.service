@@ -1,0 +1,11 @@
+[Unit]
+Description=Disable slot2 when eSIM has no profile
+After=droid-hal-init.service
+Before=ofono.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/swimtool-disable-slot2
+
+[Install]
+WantedBy=multi-user.target

@@ -1,7 +1,7 @@
 project(
   'swimtool',
   'cpp',
-version : '0.1.0',
+version : '0.1.0+master.20260616211905.ab1e874',
   default_options : ['warning_level=2', 'cpp_std=c++17']
 )
 
